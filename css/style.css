@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253, 112, 101);
+    color: rgb(253, 255, 255);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(253, 112, 101);
+    display: flex;
+}
+
+.logo{
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;    
+}
+.logo img{
+    height: 80px;
+    width: auto;
+}
+
+
+nav{
+    margin:auto;
+    margin-top: 56px;    
+}
+
+.navBar a{
+    color: rgb(253, 255, 255);
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.navBar .icon{
+    display: none;
+}
+
+
+
+.introBlock {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mainWelcome{
+    /* background: black; */
+    text-align: center;
+    padding: 100px 0 30px 0;
+
+}
+
+.mainWelcome h1{
+    color: rgb(253, 255, 255);
+    font-size: 44px;
+}
+
+.mainWelcome h1::after{
+   display: none;
+}
+
+
+.mainTeam{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 0 100px 0;
+    color: white;
+}
+
+.mainTeam h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.teamCards{ 
+	display: flex;	
+}
+
+
+.photo{ 
+    margin: 20px auto;
+}
+.ghost, .cherry {
+    width: auto;
+    height: 200px;
+}
+
+
+.aboutPosition{
+    font-size: 14px;
+}
+
+.card{    
+    text-align: center; 
+    margin: auto;   
+    width: 400px;
+    height: 400px;
+}
+
+
+
+
+
+.container{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;    
+     
+}
+
+.container {    
+    float: left;
+    width: 100%;
+     
+}
+.container .galleryCard{
+    margin: 2% 2% 10px 2%; 
+}
+
+.container  img{
+    max-width: 100%;
+    height: auto;
+        
+}
+
+.mainWork{
+    color: white;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.mainWork h1{    
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+
+.mainWork img:hover{
+    opacity: 0.8;
+}
+
+
+.wrapper{
+    width: 86%;
+    margin: 0 auto;
+}
+
+.mainAbout{    
+    padding: 100px 0px 0 0px;   
+}
+
+.mainAbout h1{
+    text-align: center;   
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+
+.mainAboutMe{
+
+    text-align: center;      
+}
+
+.mainAboutMe p{
+    font-size: 37px;
+}
+
+.maineText{
+    margin: 5%;
+}
+
+.peachBlock img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.imageWrapperSize{ 
+    
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+
+}
+
+
+
+h1:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+}
+
+
+footer{
+    width: 100%;
+    height: auto;
+    /* background: black; */
+    padding: 30px 0px 30px 0px;
+}
+
+.futerInfo{
+    height: 40px;
+    width: 300px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto
+}
+
+
+@media screen and (max-width:1010px){
+    
+    .container{                     
+        flex-direction: column;
+        margin: auto;
+        float: left;
+        width: 100%;
+        
+    }
+    .container .galleryCard{
+        margin: 5% 2% 10px 2%;
+    }
+    
+    .logo img{
+        height: 200px;
+        width: auto;
+    }
+
+    .introBlock img{
+       height: 450px;
+       width: 450px;
+    }
+
+    
+    
+    header{        
+        flex-direction: column;
+        float:right;
+    }
+
+    nav{
+        margin: auto;
+        margin-top: 16px;        
+    }
+    
+    .logo{
+        width: auto;
+        height: auto;
+        
+        margin: auto;
+        margin-top: 56px;        
+        
+    }
+    
+    .navBar a{
+        display: none;
+        font-size: 30px;        
+    }
+
+    .navBar a.icon{ 
+
+        align-items: center;        
+        display: block;
+        color: white;
+        font-size: 40px;
+    } 
+
+    .navBar.responsive a{        
+        display: block;       
+    }    
+
+    main .mainWelcome{
+        padding: 50px 0px 50px 0px;
+    }
+    main .mainWelcome p{
+        font-size: 14px;
+    }
+    main .mainWelcome h1{
+        font-size: 50px;
+    }
+
+    main .mainAboutMe{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 0px 50px 0px;       
+    }
+
+    .mainAboutMe p{
+        font-size: 52px;
+    }
+    
+    .peachBlock img{
+        width: 500px;
+        height: 500px;
+    }       
+
+    main .mainAbout h1{
+        text-align: center;        
+    }
+    
+    .teamCards{
+        flex-direction: column;
+    }    
+    
+    .mainAbout{    
+        padding: 40px 0 0 0;       
+    }
+    
+    .card{    
+        text-align: center; 
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 90px;   
+        width: 800px;
+        height: 400px;
+    }
+
+    .aboutPosition{
+        font-size: 42px;
+    }
+
+    .ghost, .cherry{
+        width: auto;
+        height: 350px;
+    }
+    
+    .navBar a.icon{
+        font-size: 65px;
+    }
+    
+    .navBar a{
+        font-size: 50px;
+    }
+
+    footer{        
+        padding: 30px 0px 120px 0px;
+    }
+    
+    .futerInfo{        
+        font-size: 50px;       
+    }         
+
+}
